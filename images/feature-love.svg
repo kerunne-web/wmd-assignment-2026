@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" fill="#2C2C2C" rx="50"/>
+  <!-- Outer heart -->
+  <path d="M50,75 C50,75 18,55 18,35 C18,24 26,17 35,17 C41,17 47,21 50,26 C53,21 59,17 65,17 C74,17 82,24 82,35 C82,55 50,75 50,75 Z"
+    fill="none" stroke="#C9A84C" stroke-width="2.5"/>
+  <!-- Inner heart filled -->
+  <path d="M50,65 C50,65 28,50 28,37 C28,30 33,26 38,26 C43,26 47,29 50,33 C53,29 57,26 62,26 C67,26 72,30 72,37 C72,50 50,65 50,65 Z"
+    fill="#C9A84C" opacity="0.2"/>
+  <!-- Small sparkle dots around -->
+  <circle cx="50" cy="12" r="2" fill="#C9A84C"/>
+  <circle cx="20" cy="20" r="1.5" fill="#C9A84C" opacity="0.6"/>
+  <circle cx="80" cy="20" r="1.5" fill="#C9A84C" opacity="0.6"/>
+  <circle cx="12" cy="45" r="1.5" fill="#C9A84C" opacity="0.6"/>
+  <circle cx="88" cy="45" r="1.5" fill="#C9A84C" opacity="0.6"/>
+  <!-- Gold shine line -->
+  <line x1="38" y1="28" x2="34" y2="24" stroke="#C9A84C" stroke-width="1.5" opacity="0.7"/>
+</svg>
