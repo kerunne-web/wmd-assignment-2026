@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feedback | CakeZone</title>
+        <link rel ="stylesheet" href="style.css">
+        <link rel ="icon" href="images/favicon.jpg" type="image/jpg">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="header-top">
+                <div class="logo-line">
+                    <div>
+                        <div class="logo">Cake<span>Zone</span></div>
+                        <div class="tagline">Artisan Bakery &amp; Custom Confections</div>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="cakes.html">Cakes</a>
+                <a href="orders.html">Custom Orders</a>
+                <a href="contact.html">Contact</a>
+                <a href="feedback.html" class="active">Feedback</a>
+            </nav>
+        </header>
+
+        <div class="page-banner">
+            <div class="eyebrow">Share Your Experience</div>
+            <h1>Customer <em>Feedback</em></h1>
+        </div>
+
+        <div class="page-content">
+            <h2 class="section-title">How Did We Do?</h2>
+            <div class="gold-rule"><span>◆</span></div>
+            <p class="form-intro">Your feedback means the world to us. Whether it's a praise or a suggestion, we read every message and use it to keep improving.</p>
+
+            <div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Your name</label>
+                        <input type="text" id="name" placeholder="e.g. Neo Kgosi"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="yourname@email.com"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <span class="rating-label">Rate Our Service</span>
+                    <div class="star-rating">
+                        <input type="radio" id="s5" name="rating" value="5"/><label for="s5" title="5 stars">★</label>
+                        <input type="radio" id="s4" name="rating" value="4"/><label for="s4" title="4 stars">★</label>
+                        <input type="radio" id="s3" name="rating" value="3"/><label for="s3" title="3 stars">★</label>
+                        <input type="radio" id="s2" name="rating" value="2"/><label for="s2" title="2 stars">★</label>
+                        <input type="radio" id="s1" name="rating" value="1"/><label for="s1" title="1 stars">★</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="cake">Which Cake Did You Order?</label>
+                    <input type="text" id="cake" placeholder="e.g. Chocolate Cake, Custom Wedding Cake..."/>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" placeholder="Share your experience with us..."></textarea>
+                </div>
+               
+                <button class="btn-gold" onclick="submitFeedback()">Submit Feedback</button>
+                <div class="success-msg" id="success">
+                    Thank you so much for your feedback! We truly appreciate you taking the time to share your experience.❤️
+                </div>
+            </div>
+        </div>
+
+         <footer>
+            <p>&copy; 2026 <span>CakeZone</span> &nbsp; &nbsp; Artisan Bakery &nbsp; &nbsp; Francistown, Botswana</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

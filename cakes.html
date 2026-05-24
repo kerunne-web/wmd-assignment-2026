@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cakes | CakeZone</title>
+        <link rel ="stylesheet" href="style.css">
+        <img src="images/favicon.jpg" type="image/jpg">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+           <div class="header-top">
+            <div class="logo-line">
+                <div>
+                    <div class="logo">Cake<span>Zone</span></div>
+                    <div class="tagline">Artisan Bakery &amp; Custom Confections</div>
+                </div>
+            </div>
+           </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="cakes.html" class="active">Cakes</a>
+                <a href="orders.html">Custom Orders</a>
+                <a href="contact.html">Contact</a>
+                <a href="feedback.html">Feedback</a>
+            </nav>
+        </header>
+
+        <div class="page-banner">
+            <div class="eyebrow">Our Menu</div>
+            <h1>Our <em>Cakes</em></h1>
+        </div>
+
+        <div class="shop-layout">
+
+            <div class="cakes-section">
+                <h2 class="section-title">Handcrafted with Passion</h2>
+                <div class="gold-rule"><span>◆</span></div>
+
+                <div class="cakes-grid">
+
+                    <div class="cake-card">
+                        <img class="cake-img" src="images/strawberry.jpg" alt="Strawberry Cake"/>
+                        <div class="cake-body">
+                            <div class="cake-badge">Signature</div>
+                            <div class="cake-name">Strawberry Cake</div>
+                            <div class="cake desc">Light vanilla sponge with fresh strawberry compote and whipped cream frosting.</div>
+                            <div class="cake-footer">
+                                <div class="cake-price"><small>From</small>P250</div>
+                                <button class="btn-gold" onclick="addToCart('Strawberry Cake', 250)">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cake-card">
+                        <img class="cake-img" src="images/vanilla.jpg" alt="Vanilla Cake"/>
+                        <div class="cake-body">
+                            <div class="cake-badge">Classic</div>
+                            <div class="cake-name">Vanilla Cake</div>
+                            <div class="cake-desc">Fluffy Madagascar vanilla sponge with silky buttercream and pearl decoration.</div>
+                            <div class="cake-footer">
+                                <div class="cake-price"><small>From</small>P200</div>
+                                <button class="btn-gold" onclick="addToCart('Vanilla Cake', 200)">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cake-card">
+                        <img class="cake-img" src="images/chocolate.jpg" alt="Chocolate Cake"/>
+                        <div class="cake-body">
+                            <div class="cake-badge">Bestseller</div>
+                            <div class="cake-name">Chocolate Cake</div>
+                            <div class="cake-desc">Rich dark chocolate layers with velvety ganache frosting and chocolate shavings.</div>
+                            <div class="cake-footer">
+                                <div class="cake-price"><small>From</small>P250</div>
+                                <button class="btn-gold" onclick="addToCart('Chocolate Cake', 200)">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cake-card">
+                        <img class="cake-img" src="images/redvelvet.jpg" alt="Red Velvet Cake"/>
+                        <div class="cake-body">
+                            <div class="cake-badge">Fan Favourite</div>
+                            <div class="cake-name">Red Velvet Cake</div>
+                            <div class="cake-desc">Iconic crimson sponge with tangy cream cheese frosting for every bite.</div>
+                            <div class="cake-footer">
+                                <div class="cake-price"><small>From</small>P300</div>
+                                <button class="btn-gold" onclick="addToCart('Red Velvet Cake', 300)">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cake-card">
+                        <img class="cake-img" src="images/coconutpineapple.jpg" alt="Lemon Drizzle Cake"/>
+                        <div class="cake-body">
+                            <div class="cake-badge">Seasonal</div>
+                            <div class="cake-name">Lemon Drizzle Cake</div>
+                            <div class="cake-desc">Bright zesty lemon sponge soaked in tart syrup with a glossy citrus glaze.</div>
+                            <div class="cake-footer">
+                                <div class="cake-price"><small>From</small>P220</div>
+                                <button class="btn-gold" onclick="addToCart('Lemon Drizzle Cake', 220)">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cake-card">
+                        <img class="cake-img" src="images/caramel.jpg" alt="Vanilla Cake"/>
+                        <div class="cake-body">
+                            <div class="cake-badge">Indulgent</div>
+                            <div class="cake-name">Salted Caramel Cake</div>
+                            <div class="cake-desc">Brown butter sponge with salted caramel filling and a flowing caramel drizzle.</div>
+                            <div class="cake-footer">
+                                <div class="cake-price"><small>From</small>P280</div>
+                                <button class="btn-gold" onclick="addToCart('Salted Caramel Cake', 280)">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="cta-box">
+                    <div class="cta-eyebrow">Want Something Unique?</div>
+                    <h3>Design Your Dream Cake</h3>
+                    <p>Tell us your vision - any flavour, any size, any occassion.</p>
+                    <a href="orders.html" class="btn-outline">Place a Custom Order</a>
+                </div>
+            </div>
+
+            <div class="cart-box">
+                <div class="cart-title">
+                    <span class="cart-icon">🛒</span> Your Cart
+                </div>
+                <div class="cart-divider"></div>
+                <div id="cart-items">No items yet</div>
+                <div class="cart-total-row">
+                    <span class="cart-total-label">Total</span>
+                    <span id="cart-total">P0</span>
+                </div>
+                <button class="btn-checkout" onclick="checkout()">Proceed to Checkout</button>
+            </div>
+
+        </div>
+
+        <div class="modal" id="receipt-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>🧾Your Receipt</h2>
+                    <button class="close" onclick="closeReceipt()">❌</button>
+                </div>
+                <div class="receipt-label">Order Summary</div>
+                <div id="receipt-details"></div>
+                <div class="receipt-total-row">
+                    <span class="receipt-total-label">Total Paid</span>
+                    <span id="receipt-total">P0</span>
+                </div>
+                <button class="btn-close-modal" onclick="closeReceipt()">Close Receipt</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 <span>CakeZone</span> &nbsp; &nbsp; Artisan Bakery &nbsp; &nbsp; Francistown, Botswana</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

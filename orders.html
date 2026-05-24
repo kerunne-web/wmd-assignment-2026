@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Custom Orders | CakeZone</title>
+        <link rel ="stylesheet" href="style.css">
+        <link rel ="icon" href="images/favicon.jpg" type="image/jpg">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+         <header>
+            <div class="header-top">
+                <div class="logo-line">
+                    <div>
+                        <div class="logo">Cake<span>Zone</span></div>
+                        <div class="tagline">Artisan Bakery &amp; Custom Confections</div>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="cakes.html">Cakes</a>
+                <a href="orders.html" class="active">Custom Orders</a>
+                <a href="contact.html">Contact</a>
+                <a href="feedback.html">Feedback</a>
+            </nav>
+        </header>
+
+        <div class="page-banner">
+            <div class="eyebrow">Bespoke Creations</div>
+            <h1><em>Custom</em> Cake Orders</h1>
+        </div>
+
+        <div class="page-content">
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-num">01</div>
+                    <h4>Fill the Form</h4>
+                    <p>Tell us your vision and details</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">02</div>
+                    <h4>We Confirm</h4>
+                    <p>We'll reach out to finalise your order</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">03</div>
+                    <h4>We Bake &amp; Deliver</h4>
+                    <p>Your perfect cake arrives on time</p>
+                </div>
+            </div>
+
+            <h2 class="secton-title">Place Your Order</h2>
+            <div class="gold-rule"><span>◆</span></div>
+            <p class="form-intro">Ready to create something extraordinary? Fill in the details below and our team will be in touch within 24 hours to confirm your order.</p>
+
+            <div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="e.g. Naledi Sithole" />
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="e.g. +267 71 234 567" />
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="flavour">Cake Flavour</label>
+                        <select id="flavour">
+                            <option value="">Select a flavour...</option>
+                            <option>Strawberry</option>
+                            <option>Vanilla</option>
+                            <option>Chocolate</option>
+                            <option>Red Velevet</option>
+                            <option>Lemon Drizzle</option>
+                            <option>Salted Caramel</option>
+                            <option>Other (specify in notes)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="size">Cake Size</label>
+                        <select id="size">
+                            <option value="">Select a size...</option>
+                            <option>Small (6" - serves 8)</option>
+                            <option>Medium (8" - serves 16)</option>
+                            <option>Large (10" - serves 25)</option>
+                            <option>Extra Large (12" - serves 35+)</option>
+                            <option>Tiered (Custom)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Required Date</label>
+                    <input type="date" id="date" />
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message on Cake</label>
+                    <input type="text" id="message" placeholder="e.g. Happy Birthday Bame!" />
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Additional Notes / Design Ideas</label>
+                    <textarea id="notes" placeholder="Describe any special design requests, colours, decorations, dietary requirements, etc."></textarea>
+                </div>
+
+                <button class="btn-gold" onclick="submitOrder()">Submit Order Request</button>
+                <div class="success-msg" id="success">
+                    Thank you! Your order request as been received. We'll contact you within 24 hours to confirm the details.
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 <span>CakeZone</span> &nbsp; &nbsp; Artisan Bakery &nbsp; &nbsp; Francistown, Botswana</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
